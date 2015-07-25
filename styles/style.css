@@ -1,0 +1,57 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    width: 100%;    
+    top: 50%;
+    -webkit-transform: translateY(-50%);    
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#image-1 {
+    display: block;
+}
+
+#image-2 {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    top: 0;
+
+    background-image: url('../img/landscape-grey.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#image-2-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 50%;
+
+    -webkit-transform: translate(50%, -50%);
+
+    border-radius: 50%;
+    background-color: #c0392b;
+}
+
+#image-2-button::after {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    content: '\2194';
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 50px;
+}
